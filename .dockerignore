@@ -1,0 +1,38 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.swp
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore git files
+.git
+.gitignore
+
+# Ignore test and documentation files (if not needed in production)
+tests/
+docs/
+*.md
+
+# Ignore other common files/folders not needed for app execution
+*.log
+*.tmp
+*.bak
+node_modules/
+dist/
+build/
+coverage/

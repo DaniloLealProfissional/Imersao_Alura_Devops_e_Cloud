@@ -1,0 +1,9 @@
+services:
+  app:
+    build: . # Constrói a imagem usando o Dockerfile presente no diretório atual.
+    container_name: fastapi_app # Define o nome do container como "fastapi_app".
+    ports:
+      - "8000:8000" # Mapeia a porta 8000 do container para a porta 8000 do host, permitindo acesso à API pelo navegador.
+    volumes:
+      - .:/app # Sincroniza o diretório atual do host com o diretório /app do container, facilitando o desenvolvimento (hot reload).
+    command: uvicorn app:app --host 0.0.0.0 --reload # Comando que inicia a aplicação FastAPI com recarregamento automático (útil para desenvolvimento).
